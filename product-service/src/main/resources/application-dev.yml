@@ -1,0 +1,20 @@
+spring.application.name: product-service
+server:
+  port: 8081
+  servlet:
+    context-path: /product
+
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      host: ${DB_HOST}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      database: ${DB_NAME}
+      authentication-database: admin
+
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG
+    com.mongodb: DEBUG
