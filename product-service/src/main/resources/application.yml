@@ -10,5 +10,5 @@ spring:
       username: productUser
       password: productPassword
       database: productdb
-      authentication-database: admin
+      authentication-database: productdb
       auto-index-creation: true
